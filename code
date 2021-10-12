@@ -1,0 +1,88 @@
+show(rectangle(w=300,h=300,fill="#98FF00"))
+c1 = circle(r=150,fill="#F30F00",stroke_width=0)
+c2 = circle(r=140,fill="#F37900",stroke_width=2,stroke="#F30F00")
+c3 = circle(r=130,fill="#5BD76A",stroke_width=2,stroke="#F37900")
+c4= circle(r=120,fill="#22ACC9",stroke_width=2,stroke="#5BD76A")
+c5 = circle(r=110,fill="#BEFF00",stroke_width=2,stroke="#22ACC9")
+c6 = circle(r=100,fill="#933267",stroke_width=2,stroke="#BEFF00")
+show(c1,c2,c3,c4,c5,c6)
+
+
+
+p11 = point(x=-100, y=0)
+p21 = point(x=0, y=100)
+p31 = point(x=-100, y=100)
+
+
+
+
+p1 = point(x=0, y=100)
+p2 = point(x=0, y=-100)
+p3 = point(x=-100, y=0)
+p4 = point(x=100, y=0)
+shape = polygon([p1, p2, p3,p4],fill="#15CEDF",stroke_width=0)
+show(shape)
+
+
+
+
+p11 = point(x=0, y=100)
+p21 = point(x=0, y=-100)
+p31 = point(x=-100, y=0)
+p41 = point(x=100, y=0)
+shape1 = polygon([p11, p31, p41,p21],fill="#9500E3",stroke_width=0)
+show(shape1)
+
+
+
+r1=rectangle(w=100,h=100,fill="#B70CA2",stroke_width=0)
+r2=rectangle(w=75,h=75,fill="#FA8000",stroke_width=0)
+r3=rectangle(w=50,h=50,fill="#FF00AA",stroke_width=0)
+r4=rectangle(w=25,h=25,fill="#2CD3D1")
+show(r1,r2|rotate(45),r3,r4|rotate(45))
+
+s1 = circle(r=50,stroke="#D8CE04",stroke_width=3) + ellipse(w=100, h=50,stroke="#1BD804",stroke_width=3) + ellipse(w=50, h=100,stroke="#04D3D8",stroke_width=3)
+show(s1)
+
+
+c11 = circle(x=-100,y=0,r=25,fill="#127603" ,stroke_width=0)| repeat(5, scale(.5))
+c111 = circle(x=-100,y=0,r=20,fill="#19ED38" ,stroke_width=0)| repeat(5, scale(.5))
+c1111 = circle(x=-100,y=0,r=15,fill="#FC3565" ,stroke_width=0)| repeat(5, scale(.5))
+c11111 = circle(x=-100,y=0,r=10,fill="yellow" ,stroke_width=0)| repeat(5, scale(.5))
+show(c11,c111,c1111,c11111)
+
+c12 = circle(x=100,y=0,r=25,fill="##127603",stroke_width=0) | repeat(5, scale(.5))
+c122 = circle(x=100,y=0,r=20,fill="#FC3565",stroke_width=0) | repeat(5, scale(.5))
+c1222 = circle(x=100,y=0,r=15,fill="#19ED38",stroke_width=0) | repeat(5, scale(.5))
+c12222 = circle(x=100,y=0,r=10,fill="yellow",stroke_width=0) | repeat(5, scale(.5))
+show(c12,c122,c1222,c12222)
+
+c13 = circle(x=0,y=100,r=25,fill="#91056A",stroke_width=0) | repeat(5, scale(.5))
+c133 = circle(x=0,y=100,r=20,fill="#546DE0",stroke_width=0) | repeat(5, scale(.5))
+c1333 = circle(x=0,y=100,r=15,fill="#88F7E9",stroke_width=0) | repeat(5, scale(.5))
+c13333 = circle(x=0,y=100,r=10,fill="yellow",stroke_width=0) | repeat(5, scale(.5))
+show(c13,c133,c1333,c13333)
+
+c14 = circle(x=0,y=-100,r=25,fill="#91056A",stroke_width=0) | repeat(5, scale(.5))
+c144 = circle(x=0,y=-100,r=20,fill="#88F7E9",stroke_width=0) | repeat(5, scale(.5))
+c1444 = circle(x=0,y=-100,r=15,fill="#546DE0",stroke_width=0) | repeat(5, scale(.5))
+c14444 = circle(x=0,y=-100,r=10,fill="yellow",stroke_width=0) | repeat(5, scale(.5))
+show(c14,c144,c1444,c14444)
+
+
+
+
+
+
+def dot(x, y):
+    c = circle(x=x, y=y, r=5, fill="yellow")
+    return c
+
+d = dot(x=0, y=0)
+show(d)
+
+
+
+
+
+
